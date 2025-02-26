@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: AccountService
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/transaction
+    username: myuser
+    password: mypassword
+  kafka:
+    bootstrap-servers: localhost:29092
+    topic: transaction
