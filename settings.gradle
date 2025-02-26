@@ -1,0 +1,5 @@
+rootProject.name = 'neoflexgraduation'
+
+include 'AccountService'
+include 'TransactionService'
+include 'NotificationService'
