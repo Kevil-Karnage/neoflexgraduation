@@ -70,3 +70,13 @@ services:
     depends_on:
       - db
       - kafka
+
+  notification_service:
+    container_name: notification_service
+    build:
+      context: NotificationService/
+      dockerfile: Dockerfile
+    ports:
+      - 9090:9090
+    depends_on:
+      - kafka
