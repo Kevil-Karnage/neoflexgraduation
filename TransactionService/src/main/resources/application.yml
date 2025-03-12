@@ -1,5 +1,5 @@
-server:
-  port: 8585
+#server:
+#  port: 8080
 
 spring:
   application:
@@ -10,10 +10,10 @@ spring:
       ddl-auto: update
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/transaction
-    username: myuser
-    password: mypassword
+    url: jdbc:postgresql://db:5432/transaction
+    username: user
+    password: user
 
   kafka:
-    bootstrap-servers: localhost:29092
+    bootstrap-servers: kafka:29092
     topic: transaction
