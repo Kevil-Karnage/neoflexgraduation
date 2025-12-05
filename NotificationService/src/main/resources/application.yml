@@ -1,12 +1,9 @@
-server:
-  port: 9090
-
 spring:
   application:
     name: NotificationService
 
   kafka:
-    bootstrap-servers: localhost:29092
+    bootstrap-servers: kafka:29092
     topic: transaction
 
   mail:
